@@ -1,0 +1,22 @@
+form {
+  /* 폭 */
+  width: 500px;
+  padding: 40px;
+  background: #eee;
+  /* 모서리 4방향 다 둥글게 */
+  border-radius: 10px;
+  /* 가운데 정렬 */
+  margin: 0 auto;
+}
+
+form input[type="text"] {
+  width: 100%;
+  /* 바깥 여백 */
+  margin: 10px 0px;
+}
+
+form input[type = "submit"] {
+  display: block;
+  padding: 10px 50px;
+  margin: 0 auto;
+}

@@ -1,0 +1,19 @@
+form {
+  width: 500px;
+  padding: 40px;
+  background: #eee;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+form input[type="text"], form input[type="password"] {
+  width: 100%;
+  margin: 10px 0px;
+  padding: 10px;
+}
+
+form input[type="submit"] {
+  display: block;
+  padding: 10px 100px;
+  margin: 0 auto;
+}

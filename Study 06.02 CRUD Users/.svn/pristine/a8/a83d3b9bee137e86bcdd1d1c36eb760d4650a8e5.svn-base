@@ -1,0 +1,25 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ page session="false" %>
+<html>
+<head>
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/home.css">
+	<title>Home</title>
+</head>
+<body>
+<h1>
+	User Data
+</h1>
+<a href="/Users/signin">로그인</a>&nbsp;&nbsp;<a href="signup">회원가입</a><br/><br/>
+<table>
+	<thead>
+		<tr>
+			<th>idx</th><th>이름</th><th>아이디</th><th>정보 변경</th>
+		</tr>
+	</thead>
+	<tbody>
+		${userInfo }
+	</tbody>
+</table>
+</body>
+</html>

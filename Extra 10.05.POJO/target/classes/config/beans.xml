@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+	
+	<bean id="hello" class="kopo.di.xml.Hello">
+		<property name="name" value="kopo!!!" />
+		<property name="printer" ref="WhoAreYou" /> <!-- 얘는 아래 bean id="WhoAreYou"를 참조한다. -->
+	</bean>
+	
+	<bean id="WhoAreYou" class="kopo.di.xml.StringPrinter" />
+	<bean id="consolePrinter" class="kopo.di.xml.ConsolePrinter" />
+
+</beans>

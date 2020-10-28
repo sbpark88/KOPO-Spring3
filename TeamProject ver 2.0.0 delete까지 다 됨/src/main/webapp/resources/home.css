@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+table {
+	border-collapse: collapse;
+	width : 90%; 
+	margin: 0 auto;
+	
+}
+
+td, th { 
+	padding : 5px;
+	text-align :  center;
+}
+
+th {
+	background : #999;
+	color : #fff;
+}
+
+td a{
+	background: #faeefe;
+	padding : 5px 20px;
+	text-decoration: none;
+}
+
+a {
+	background: #faeefe;
+	padding : 5px 20px;
+	text-decoration: none;
+}
+

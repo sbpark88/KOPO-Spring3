@@ -1,0 +1,11 @@
+p {
+  /* 폭 */
+  width: 500px;
+  padding: 40px;
+  background: #eee;
+  /* 모서리 4방향 다 둥글게 */
+  border-radius: 10px;
+  /* 가운데 정렬 */
+  margin: 0 auto;
+  text-align: center;
+}

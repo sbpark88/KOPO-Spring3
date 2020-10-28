@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>글쓰기</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="fontawesome-free-5.10.1-web/css/all.min.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="pages.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="write.js"></script>
+  </head>
+  <body>
+    <header class="top_nav">
+      <a href="copyright.html"><i class="fa fa-tree" aria-hidden="true"></i> Copyright</a>
+      <a href="home.html"><i class="fa fa-reply" aria-hidden="true"></i> 홈으로</a>
+    </header>
+	<div class="contentbox"></div>
+    <select id="category"></select>
+    <br>
+    <input type="text" placeholder="title" id="title">
+    <br>
+    <textarea id="content" rows="8"> </textarea>
+    <br>
+    <input type="text" id="nickname">
+    <input type="password" id="password">
+    <br>
+    <input type="button" value="글쓰기 완료" id="writeBtn"></button>
+    <input type="button" value="글쓰기 취소" id="returnBtn"></button>
+    </div>
+  </body>
+</html>
