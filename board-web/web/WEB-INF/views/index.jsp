@@ -4,6 +4,7 @@
     <title>$Title$</title>
   </head>
   <body>
-  $END$
+  <p>Hello world!</p>
+  <p>https://velog.io/@hogwarts</p>
   </body>
 </html>
