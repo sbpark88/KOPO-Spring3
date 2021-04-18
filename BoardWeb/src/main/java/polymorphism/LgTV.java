@@ -1,8 +1,15 @@
 package polymorphism;
 
 public class LgTV implements TV {
+	private Speaker speaker;
+	
 	public LgTV() {
-		System.out.println("===> LG TV 객체 생성");
+		System.out.println("===> LG TV default 객체 생성.");
+	}
+	
+	public LgTV(Speaker speaker) {
+		System.out.println("===> LG TV speaker parameter 객체 생성.");
+		this.speaker = speaker;
 	}
 	
 	public void initMethod() {
@@ -25,11 +32,13 @@ public class LgTV implements TV {
 
 	@Override
 	public void volumeUp() {
-		System.out.println("LG TV---소리 올린다.");
+//		System.out.println("LG TV---소리 올린다.");
+		speaker.volumeUp();
 	}
 
 	@Override
 	public void volumeDown() {
-		System.out.println("LG TV---소리 내린다.");
+//		System.out.println("LG TV---소리 내린다.");
+		speaker.volumeDown();
 	}
 }

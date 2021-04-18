@@ -3,6 +3,10 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<bean id="tv" class="polymorphism.LgTV" init-method="initMethod" destroy-method="destroyMethod"></bean>
+	<bean id="tv" class="polymorphism.LgTV" init-method="initMethod" destroy-method="destroyMethod">
+		<constructor-arg ref="elac"></constructor-arg>	<!-- 이 시점에 객체가 생성되므로 ElacSpeaker 객체의 lazy-init이 실행된다. -->
+	</bean>
 	<bean id="secondTv" class="polymorphism.SamsungTV" init-method="initMethod" destroy-method="destroyMethod" lazy-init="true"></bean>
+	
+	<bean id="elac" class="polymorphism.ElacSpeaker" lazy-init="true"></bean>
 </beans>
