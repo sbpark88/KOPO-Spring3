@@ -2,14 +2,21 @@ package polymorphism;
 
 public class LgTV implements TV {
 	private Speaker speaker;
+	private int price;
 	
 	public LgTV() {
-		System.out.println("===> LG TV default 객체 생성.");
+		System.out.println("===> LG TV 객체 생성 (using default constructor).");
 	}
 	
 	public LgTV(Speaker speaker) {
-		System.out.println("===> LG TV speaker parameter 객체 생성.");
+		System.out.println("===> LG TV 객체 생성 (using 1 parameter(speaker) constructor).");
 		this.speaker = speaker;
+	}
+	
+	public LgTV(Speaker speaker, int price) {
+		System.out.println("===> LG TV 객체 생성 (using 2 parameters(speaker, price) constructor).");
+		this.speaker = speaker;
+		this.price = price;
 	}
 	
 	public void initMethod() {
@@ -22,7 +29,7 @@ public class LgTV implements TV {
 	
 	@Override
 	public void powerOn() {
-		System.out.println("LG TV---전원 켠다.");		
+		System.out.printf("LG TV---전원 켠다. (가격 : %d )\n", this.price);		
 	}
 
 	@Override
