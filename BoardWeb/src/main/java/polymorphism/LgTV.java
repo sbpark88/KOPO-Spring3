@@ -4,10 +4,12 @@ public class LgTV implements TV {
 	private Speaker speaker;
 	private int price;
 	
+	// Default Constructor
 	public LgTV() {
 		System.out.println("===> LG TV 객체 생성 (using default constructor).");
 	}
 	
+	// Constructor Injection
 	public LgTV(Speaker speaker) {
 		System.out.println("===> LG TV 객체 생성 (using 1 parameter(speaker) constructor).");
 		this.speaker = speaker;
@@ -18,6 +20,17 @@ public class LgTV implements TV {
 		this.speaker = speaker;
 		this.price = price;
 	}
+	
+	// Setter Injection
+	public void setSpeaker(Speaker newSpeaker) {
+		System.out.println("===> LG TV setSpeaker() 호출");
+		this.speaker = newSpeaker;
+	}
+	
+	public void setPrice(int price) {
+		System.out.println("===> LG TV setPrice() 호출");
+		this.price = price;
+	}	
 	
 	public void initMethod() {
 		System.out.println("init-method 호출 : LG TV 객체 초기화 작업 처리..");
@@ -48,4 +61,6 @@ public class LgTV implements TV {
 //		System.out.println("LG TV---소리 내린다.");
 		speaker.volumeDown();
 	}
+	
+	
 }
