@@ -36,6 +36,10 @@ public class TVUser {
 		
 		// 4. lazy-init 객체 생성 테스트.
 		TV secondTv = (TV)factory.getBean("secondTv");	// lazy-init으로 인해 bean이 사용되는 시점에 객체가 생성되어 Constructor, init-method를 실행.
+		secondTv.powerOn();
+		secondTv.volumeUp();
+		secondTv.volumeDown();
+		secondTv.powerOff();
 		System.out.println("");
 		
 		// 3. Spring container가 객체를 소멸한다.
